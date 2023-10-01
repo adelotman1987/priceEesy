@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+Host
+brd.superproxy.io:22225
+Username
+brd-customer-hl_1bc3e87c-zone-unblocker
+Password
+ic6b8facabz4
+
+
+curl --proxy brd.superproxy.io:22225 --proxy-user brd-customer-hl_1bc3e87c-zone-unblocker:ic6b8facabz4 -k https://lumtest.com/myip.json
