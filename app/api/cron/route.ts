@@ -44,11 +44,10 @@ export async function GET(request: Request) {
         // Update Products in DB
         const updatedProduct = await Product.findOneAndUpdate(
           {
-            url: scrapedProduct.url,
+            url: product.url,
           },
           product,
-          {upsert:true,new:true}
-         
+                  
         );
 
         // ======================== 2 CHECK EACH PRODUCT'S STATUS & SEND EMAIL ACCORDINGLY
